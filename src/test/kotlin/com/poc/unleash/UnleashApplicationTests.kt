@@ -17,7 +17,7 @@ class UnleashApplicationTests(
 
 	@Test
 	fun contextLoads() {
-		val x = canaryUseCase.toggleCanary("teste")
+		val resultado = canaryUseCase.toggleCanary()
 	}
 
 
@@ -27,7 +27,7 @@ class UnleashApplicationTests(
 		@Test
 		fun `percentual`() {
 
-			var mutableMap = mutableMapOf<UUID, Boolean>()
+			val mutableMap = mutableMapOf<UUID, Boolean>()
 
 			for (i in 1..50) {
 				val uuid = UUID.randomUUID()
@@ -46,7 +46,7 @@ class UnleashApplicationTests(
 		@Test
 		fun `mesmo`() {
 
-			var mutableMap = mutableMapOf<Int, Boolean>()
+			val mutableMap = mutableMapOf<Int, Boolean>()
 			val uuid = "663d0128-d2c8-4645-8ecc-c6e986f74497"
 
 			for (i in 1..150) {
