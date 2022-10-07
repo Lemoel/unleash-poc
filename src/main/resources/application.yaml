@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: development
+
+unleash:
+  app-name: unleash-poc
+  instance-id: unleash-poc-instance
+  host-api: http://localhost:4242/api/
+  environment: development
+  token: default:development.unleash-insecure-api-token
